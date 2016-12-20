@@ -23,8 +23,8 @@ ship_col = random_col(board)
 print ship_row
 print ship_col
 
-# Everything from here on should go in your for loop!
-# Be sure to indent four spaces!
+# 
+#
 for turn in range(4):
     guess_row = int(raw_input("Guess Row:"))
     guess_col = int(raw_input("Guess Col:"))
@@ -42,6 +42,6 @@ for turn in range(4):
         board[guess_row][guess_col] = "X"
         if turn == 3:
             print "Game Over"
-    # Print (turn + 1) here!
+    # 
     print "turn", turn +1
     print_board(board)
